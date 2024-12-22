@@ -5,22 +5,106 @@
   padding: 0;
   list-style: none;
   text-decoration: none;
-  box-sizing: border-box;
 }
 
 html {
   font-family: "Inter", serif;
-  background-color: #636e72;
-  color: #55efc4;
+  background-color: #213555;
+  color: #f5efe7;
 }
 
 body {
-  max-width: 1200px;
+  max-width: 1440px;
+  margin: 0 auto;
+  height: 2000px;
 }
 
 /* header settings */
+header {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-logo {
+  max-width: 150px;
+}
 
 /* main settings */
+main {
+  display: flex;
+  gap: 50px;
+  justify-content: space-between;
+  margin-top: 100px;
+}
+
+.main-container {
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+
+.main-container h1 {
+  font-size: 3rem;
+  letter-spacing: -1px;
+  line-height: 1.2;
+}
+
+.main-container h2,
+.main-container h1 {
+  text-transform: uppercase;
+}
+
+/* article introduction */
+.introduction {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.introduction p {
+  font-family: "Lora", serif;
+  line-height: 1.8;
+  font-size: 1rem;
+}
+
+.paragraph-container {
+  max-width: 600px;
+  display: flex;
+  gap: 20px;
+}
+
+/* experiences settings */
+
+/* side navbar settings */
+.nav-container {
+  position: fixed;
+  right: 300px;
+  bottom: 50px;
+}
+
+.sidebar a {
+  display: block;
+  padding-top: 50px;
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: 1px;
+  font-size: 1.5rem;
+}
+
+.sidebar a:first-child {
+  padding-top: 0;
+}
+
+a:link {
+  color: #f5efe7;
+}
+
+a:visited {
+  color: #f5efe7;
+}
 
 /* footer settings */
 
